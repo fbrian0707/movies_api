@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Movies Api</title>
+	<link rel="stylesheet" href="bootstrap/bootstrap.css" />
+	<style type="text/css"> 
+	body{
+	padding: 0px;
+	margine: 0px;
+	background-color: rgba(0,0,0,0.7);
+	//text-decoration: none;
+	}
+	
+	.thumbs{
+	padding: 2%;
+	color: grey;
+	}
+	.thumbs a{
+	color: "brown";
+	text-decoration: none;
+	}
+	.thumbs:hover{
+	 -webkit-transition-duration: 0.5s; /* Safari */
+    transition-duration: 0.5s;
+	-ms-transform: scale(1.1, 1.1); /* IE 9 */
+    -webkit-transform: scale(1.1,1.1); /* Safari */
+	background-color: rgba(0,0,0,0.5);
+	}
+
+	.thumbs:hover a{
+	color: white;
+	}
+	
+	</style>
+	<script type="text/javascript" src="angular/angular.js"></script>
+    <script type="text/javascript" src="angular-route/angular-route.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/controllers/homeCtrl.js"></script>
+    <script type="text/javascript" src="js/controllers/movieCtrl.js"></script>
+    <script type="text/javascript" src="js/services/movieService.js"></script>
+</head>
+<body ng-app="movieApi">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#/">Show Box</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+	<!--
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+	<div ng-view></div>
+</body>
+</html>

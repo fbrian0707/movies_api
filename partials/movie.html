@@ -1,0 +1,14 @@
+<div class="container" id='main'> 
+<h1 style="color:white" >{{$ctrl.data.title}}</h1>
+<br />
+
+<img ng-src="http://image.tmdb.org/t/p/w500{{$ctrl.data.backdrop_path}}" />
+<br />
+<br />
+<br />
+<p style="color:white">{{$ctrl.data.overview}}</p>
+<br />
+<iframe id="frame" frameborder="0" height="350vh" width="600vh"></iframe>
+<br />
+<p style="color:pink"><b>Movie Tag-Line:</b><i>{{$ctrl.data.tagline}}</i></p>
+</div>

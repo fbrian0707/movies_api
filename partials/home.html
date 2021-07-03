@@ -1,0 +1,9 @@
+<div id="movie_data" class="container-fluid">
+<div ng-repeat = "movie in $ctrl.data" class="col-sm-4 thumbs">
+<a href="#/movies/{{movie.id}}" id="{{movie.id}}">
+<img ng-src="http://image.tmdb.org/t/p/w500{{movie.backdrop_path}}" alt="movie.title" height="80%" width="100%" />
+<h4>{{movie.title}}</h4>
+</a>
+</div>
+
+</div>
